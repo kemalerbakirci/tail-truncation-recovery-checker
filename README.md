@@ -1,5 +1,3 @@
-build/wal_write_recover <mode> <file> [args...]
-
 # Tail Truncation Recovery Checker (C++17)
 
 **Goal:** Verify that a WAL file with records `[u32 len][payload][u32 crc]` is recoverable after a crash that cuts the **tail** mid-record. On startup, the tool scans, detects a bad tail (length/CRC mismatch or EOF), and **truncates** safely to the last good record.
