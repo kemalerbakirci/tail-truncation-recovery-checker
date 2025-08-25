@@ -1,0 +1,90 @@
+# Compiled source files
+*.o
+*.obj
+
+# Compiled source files
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.bin
+
+# Ignore main binary and all executables
+wal_write_recover
+
+# Ignore WAL and test files
+*.wal
+demo*.wal
+stress.wal
+
+# Ignore shell scripts and logs
+*.sh
+*.log
+
+# Ignore core dumps and crash reports
+core.*
+*.core
+
+# Ignore sensitive files
+.env*
+secrets.*
+*.key
+*.pem
+
+# Build directories
+/build/
+/bin/
+/dist/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs and databases
+*.sql
+*.sqlite
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Backup files
+*.bak
+*.tmp
+
+# Test output
+/test-output/
+
+# User-specific files
+*.user
+*.sublime-workspace
+*.sublime-project
+
+# Python virtual environments (if any)
+venv/
+.env/
+
+# Node modules (if any)
+node_modules/
+
+# Coverage reports
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# Misc
+*.orig
+*.patch
+*.rej
